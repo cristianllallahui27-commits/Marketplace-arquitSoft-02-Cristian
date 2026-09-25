@@ -1,0 +1,92 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Arquitectura Inicial - Marketplace" id="arq-inicial">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ACTORES -->
+        <mxCell id="grp_actores" value="ACTORES" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="600" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="act_cliente" value="Cliente" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" vertex="1" parent="1">
+          <mxGeometry x="60" y="75" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="act_seller" value="Seller" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" vertex="1" parent="1">
+          <mxGeometry x="325" y="75" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="act_admin" value="Administrador" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6C8EBF" vertex="1" parent="1">
+          <mxGeometry x="490" y="75" width="150" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- PRESENTACION -->
+        <mxCell id="grp_presentacion" value="PRESENTACIÓN" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#D5E8D4;strokeColor=#82B366;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="180" width="600" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pres_web" value="Aplicación Web → API REST" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82B366" vertex="1" parent="1">
+          <mxGeometry x="190" y="215" width="300" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- LOGICA DE NEGOCIO -->
+        <mxCell id="grp_negocio" value="LÓGICA DE NEGOCIO" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#FFE6CC;strokeColor=#D79B00;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="310" width="600" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="neg_usuarios" value="Usuarios" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D79B00" vertex="1" parent="1">
+          <mxGeometry x="55" y="345" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="neg_sellers" value="Sellers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D79B00" vertex="1" parent="1">
+          <mxGeometry x="175" y="345" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="neg_catalogo" value="Catálogo" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D79B00" vertex="1" parent="1">
+          <mxGeometry x="295" y="345" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="neg_carrito" value="Carrito" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D79B00" vertex="1" parent="1">
+          <mxGeometry x="415" y="345" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="neg_pedidos" value="Pedidos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D79B00" vertex="1" parent="1">
+          <mxGeometry x="535" y="345" width="90" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- DATOS -->
+        <mxCell id="grp_datos" value="DATOS" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#F8CECC;strokeColor=#B85450;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="440" width="600" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="datos_bd" value="Base de datos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B85450" vertex="1" parent="1">
+          <mxGeometry x="190" y="475" width="300" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- SISTEMAS EXTERNOS -->
+        <mxCell id="grp_externos" value="SISTEMAS EXTERNOS" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#E1D5E7;strokeColor=#9673A6;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="570" width="600" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_pago" value="Pasarela de pago" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673A6" vertex="1" parent="1">
+          <mxGeometry x="55" y="605" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_erp" value="ERP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673A6" vertex="1" parent="1">
+          <mxGeometry x="200" y="605" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_envio" value="Servicio de envío" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673A6" vertex="1" parent="1">
+          <mxGeometry x="345" y="605" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_fact" value="Facturación" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673A6" vertex="1" parent="1">
+          <mxGeometry x="490" y="605" width="130" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- FLECHAS FLUJO PRINCIPAL -->
+        <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="grp_actores" target="grp_presentacion">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="grp_presentacion" target="grp_negocio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="grp_negocio" target="grp_datos">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" value="integraciones" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;dashed=1;" edge="1" parent="1" source="neg_pedidos" target="grp_externos">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
