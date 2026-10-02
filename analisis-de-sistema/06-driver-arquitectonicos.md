@@ -11,5 +11,15 @@ diseño de la arquitectura.
 | DA03 | El sistema debe proteger los datos de usuarios y operaciones de compra. | AC04 – Seguridad | Puede influir en autenticación, autorización y protección de datos. |
 | DA04 | El sistema debe integrarse con una pasarela de pago externa mediante una API. | RC04 – Pasarela de pago | Condiciona la forma de comunicación e integración con servicios externos. |
 | DA05 | El sistema debe utilizar una API REST para la comunicación entre frontend y backend. | RC03 – API REST | Limita las alternativas de comunicación entre las partes del sistema. |
-| DA06 | El sistema debe validar la identidad de cada usuario antes de exponer sus endpoints. | RC06 – Autenticación | Condiciona el diseño de la capa de presentación y de negocio (middleware de autenticación/autorización). |
-| DA07 | El sistema debe integrarse con un servicio de facturación electrónica. | RC07 – Facturación electrónica | Condiciona la integración del módulo de Pedidos con un sistema externo adicional. |
+| DA06 | El sistema debe permitir modificar funcionalidades sin afectar innecesariamente otros módulos. | AC05 – Mantenibilidad | Influye en la separación de responsabilidades, modularidad y dependencias internas. |
+
+## Resumen: problema y decisión por driver
+
+| Driver | Problema que plantea | Decisión que responde |
+|---|---|---|
+| DA01 - Escalabilidad | Aumentarán usuarios en campañas | Monolito modular con posibilidad de escalamiento horizontal |
+| DA02 - Rendimiento | Habrá alta concurrencia | Incorporar caché y optimizar comunicación/procesamiento |
+| DA03 - Seguridad | Hay datos sensibles | Autenticación y autorización |
+| DA04 - Pago externo | Hay que comunicarse con una pasarela | Integración mediante API y adaptadores |
+| DA05 - API REST | Frontend/backend deben comunicarse mediante REST | Separar interfaz y backend mediante API REST |
+| DA06 - Mantenibilidad | Cambios no deben afectar otros módulos | Modularidad + Clean Architecture |
